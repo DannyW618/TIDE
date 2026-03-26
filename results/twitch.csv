@@ -1,0 +1,7 @@
+tide gcnib
+OOD Test 1 Final AUROC: 94.50 OOD Test 1 Final AUPR: 96.73 OOD Test 1 Final FPR: 32.12
+OOD Test 2 Final AUROC: 90.49 OOD Test 2 Final AUPR: 92.95 OOD Test 2 Final FPR: 59.12
+OOD Test 3 Final AUROC: 86.59 OOD Test 3 Final AUPR: 92.71 OOD Test 3 Final FPR: 74.32
+OOD Test Averaged Final AUROC: 90.53 OOD Test Averaged Final AUPR: 94.13 OOD Test Averaged Final FPR: 55.19
+IND Test Score: 67.00
+
