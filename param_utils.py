@@ -1,0 +1,67 @@
+def params(name):
+    return {
+        "seed": 123,
+        "epochs": 200,
+        "hidden_channels": 64,
+        "std_w": 6,
+        "runs": 1,
+        "display_step": 1,
+        "gat_heads": 8,
+        "out_heads": 1,
+        "hops": 2,
+        "num_layers": 2,
+        "device": 0,
+        "classify_tuple": 4,
+        "detect_tail": 2,
+        "metric_triplet": 3,
+        "mask_splits": 10,
+        "info_hidden_divisor": 2,
+        "cuda_launch_blocking": "1",
+        "m_in": -5,
+        "m_out": -1,
+        "interval": 30,
+        "neutral_fill": 0.5,
+    }[name]
+
+def dataset_aliases(name):
+    return {
+        "twitch_regions": ("DE", "EN", "ES", "FR", "RU"),
+        "twitch_train_eval_slots": (0, 1),
+        "arxiv_window": (2015, 2017),
+        "arxiv_eval_bounds": (2017, 2018, 2019, 2020),
+        "proteins_species_edges": (0, 3, 5, 8),
+        "label_cutoffs": {
+            "cora": 3,
+            "citeseer": 3,
+            "pubmed": 1,
+            "amazon-photo": 4,
+            "coauthor-cs": 4,
+        },
+    }[name]
+
+def ratio(name):
+    return {
+        "dropout": 0.5,
+        "train_prop": 0.1,
+        "valid_prop": 0.1,
+        "temperature_info_nce": 0.1,
+        "temperature_energy": 1.0,
+        "eta": 0.5,
+        "lamda1": 0.999,
+        "lamda2": 1.0,
+        "lr": 0.01,
+        "weight_decay": 0.01,
+        "neutral_feature": 0.5,
+        "sbm_in": 1.5,
+        "sbm_out": 0.5,
+        "label_noise_fraction": 0.5,
+        "softplus_beta": 1.0,
+        "gaussian_half": 0.5,
+        "pairwise_weight": 0.001,
+        "planetoid_valid_prop": 0.25,
+        "recall_level": 0.95,
+        "stable_rtol": 1e-05,
+        "stable_atol": 1e-08,
+        "club_lr": 1e-4,
+        "pmi_weight": 1e-6,
+    }[name]
