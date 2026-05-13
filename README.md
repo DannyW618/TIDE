@@ -1,6 +1,6 @@
 # TIDE
 
-This repository contains the implementation TIDE. Sample results are shown in ```./results```
+This repository contains the implementation of TIDE for the ICML26 paper "What Information Matters? Graph Out-of-Distribution Detection via Tri-Component Information Decomposition". Sample results are shown in ```./results```
 
 ## Dependencies
 - Python 3.9.19
@@ -21,3 +21,21 @@ Alternatively, you could also run the following command for individual datasets 
 ```shell
 python main.py --method tide --backbone gcnib --dataset cora --ood_type structure --mode detect --reset --use_bn --use_prop --device 0 --beta 0.01 --dropout 0.5 --lr 0.001 --gamma 1 --train_model --train_structure --train_feature --use_pairwise --pmi_w 0.01
 ```
+
+## Acknowledgement
+
+This repository takes credit from [GNNSafe](https://github.com/qitianwu/GraphOOD-GNNSafe/tree/main) for the energy-based detector backbone.
+
+## Reference 
+The bib ref for our paper is as follow:
+
+```bibtex
+@inproceedings{TIDE,
+  title = {What Information Matters? Graph Out-of-Distribution Detection via Tri-Component Information Decomposition},
+  author = {Danny Wang and Ruihong Qiu and Zi Huang},
+  booktitle = { International Conference on Machine Learning (ICML)},
+  year = {2026}
+  }
+```
+
+
