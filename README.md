@@ -1,6 +1,8 @@
 # TIDE
 
-This repository contains the implementation of TIDE for the ICML26 paper "What Information Matters? Graph Out-of-Distribution Detection via Tri-Component Information Decomposition". Sample results are shown in ```./results```
+This repository contains the implementation of TIDE for the ICML26 paper ["What Information Matters? Graph Out-of-Distribution Detection via Tri-Component Information Decomposition"](https://arxiv.org/abs/2605.13032). 
+
+Sample results are shown in ```./results```
 
 ## Dependencies
 - Python 3.9.19
